@@ -126,8 +126,13 @@ public class OussemaArfaoui extends Student implements Developer {
     <td width="50%" valign="top">
       <h4>📚 Diffusion de Travaux Scientifiques</h4>
       <p><em>🎓 Projet Académique</em></p>
-      <p>API REST sécurisée (JWT, rôles multiples) pour la publication et la recherche d'articles scientifiques, avec module IA de classification et recommandation.</p>
-      <p><strong>Spring Boot · Angular · MySQL · JWT</strong></p>
+      <ul align="left">
+        <li>API REST sécurisée (JWT, rôles multiples) avec workflow complet de soumission/révision des publications (statut, visibilité, historique d'audit)</li>
+        <li>Chatbot RAG interrogeant les publications par recherche vectorielle + reranking (cross-encoder), avec génération via LLM local (Ollama) et réponses systématiquement sourcées (document + page), pour limiter les hallucinations</li>
+        <li>Extraction de mots-clés IA à deux niveaux (Gemini, avec repli sur un extracteur local KeyBERT/spaCy)</li>
+        <li>Architecture microservices conteneurisée (Spring Boot + 2 services Python FastAPI) orchestrée via Docker Compose, avec pipeline CI</li>
+      </ul>
+      <p><strong>Spring Boot · Angular · PostgreSQL/pgvector · Docker · JWT</strong></p>
     </td>
     <td width="50%" valign="top">
       <h4>📅 Réservation de Prestations en Ligne</h4>
