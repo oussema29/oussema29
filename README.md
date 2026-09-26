@@ -1,9 +1,8 @@
 <h1 align="center">Hi 👋, I'm Oussema Arfaoui</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=22&pause=1000&color=2EE6A6&center=true&vCenter=true&width=700&lines=Software+Engineering+Student;Java+%7C+Spring+Boot+%7C+Angular+Developer;Building+Maintainable+Full-Stack+Applications;Exploring+AI-Powered+Software+Solutions" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=22&pause=1000&color=2EE6A6&center=true&vCenter=true&width=700&lines=Software+Engineering+Student;Java+%7C+Spring+Boot+%7C+Angular+Developer;Building+Maintainable+Full-Stack+Applications;Exploring+AI-Powered+Software+Solutions" alt="Typing SVG" />
 </p>
-
 
 ---
 
@@ -12,65 +11,65 @@
 ```java
 public class OussemaArfaoui extends Student implements Developer {
 
-    // Academic Profile
-    private final String institution =
-        "Higher Institute of Computer Science of Ariana (ISI Ariana)";
+// Academic Profile
+private final String institution =
+"Higher Institute of Computer Science of Ariana (ISI Ariana)";
 
-    private final String specialization =
-        "Software Engineering & Information Systems (IDL)";
+private final String specialization =
+"Software Engineering & Information Systems (IDL)";
 
-    // Core Technical Stack (industry-oriented)
-    private final String[] technicalFocus = {
-        "Java",
-        "Spring Boot",
-        "Angular",
-        "SQL",
-        "REST APIs",
-        "Git",
-        "Docker"
-    };
+// Core Technical Stack (industry-oriented)
+private final String[] technicalFocus = {
+"Java",
+"Spring Boot",
+"Angular",
+"SQL",
+"REST APIs",
+"Git",
+"Docker"
+};
 
-    // Engineering mindset (realistic and professional framing)
-    private final String engineeringFocus =
-        "Building maintainable, secure, and well-structured enterprise applications using clean architecture principles";
+// Engineering mindset (realistic and professional framing)
+private final String engineeringFocus =
+"Building maintainable, secure, and well-structured enterprise applications using clean architecture principles";
 
-    @Override
-    public String[] getInterests() {
-        return new String[] {
-            "Developing Reliable Full-Stack Web Applications",
-            "Backend Development & Software Architecture",
-            "Object-Oriented Design & Clean Code Practices",
-            "AI Integration in Software Systems"
-        };
-    }
+@Override
+public String[] getInterests() {
+return new String[] {
+"Developing Reliable Full-Stack Web Applications",
+"Backend Development & Software Architecture",
+"Object-Oriented Design & Clean Code Practices",
+"AI Integration in Software Systems"
+};
+}
 
-    @Override
-    public void run() {
-        while (isCurious()) {
-            learn();
-            build();
-            improve();
-        }
-    }
+@Override
+public void run() {
+while (isCurious()) {
+learn();
+build();
+improve();
+}
+}
 
-    // Optional improvement method for realism (more professional than abstract loops)
-    private void improve() {
-        refactor();
-        writeTests();
-        optimize();
-    }
-    private void writeTests() {
-        // ensure reliability and maintainability
-    }
+// Optional improvement method for realism (more professional than abstract loops)
+private void improve() {
+refactor();
+writeTests();
+optimize();
+}
+private void writeTests() {
+// ensure reliability and maintainability
+}
 
-    private void optimize() {
-        // performance + structure improvements
-    }
+private void optimize() {
+// performance + structure improvements
+}
 
-    public static void main(String[] args) {
-        OussemaArfaoui developer = new OussemaArfaoui();
-        developer.run();
-    }
+public static void main(String[] args) {
+OussemaArfaoui developer = new OussemaArfaoui();
+developer.run();
+}
 }
 ```
 
@@ -108,52 +107,54 @@ public class OussemaArfaoui extends Student implements Developer {
 ## 🚀 Highlighted Projects
 
 <table width="100%" border="0">
-  <tr>
-    <td width="50%" valign="top">
-      <h4>📋 Plateforme de Gestion RH</h4>
-      <p><em>🏢 Stage Professionnel — Office National de Télédiffusion</em></p>
-      <p>Modernisation complète de la gestion RH : profils, formations, pointage, paie et demandes administratives, avec automatisation documentaire et notifications email.</p>
-      <p><strong>Spring Boot · Angular · JWT · MySQL</strong></p>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🏬 Plateforme B2B de Gestion Commerciale</h4>
-      <p><em>🏢 Stage de Fin d'Études — SCSI</em></p>
-      <p>Catalogue produits hiérarchique et tarification dynamique pilotée par des règles métier (taxes, dates de validité), avec rôles Admin/Client.</p>
-      <p><strong>Angular · ASP.NET Core · SQL Server · Entity Framework Core</strong></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>📚 Diffusion de Travaux Scientifiques</h4>
-      <p><em>🎓 Projet Académique</em></p>
-      <ul align="left">
-        <li>API REST sécurisée (JWT, rôles multiples) avec workflow complet de soumission/révision des publications (statut, visibilité, historique d'audit)</li>
-        <li>Chatbot RAG interrogeant les publications par recherche vectorielle + reranking (cross-encoder), avec génération via LLM local (Ollama) et réponses systématiquement sourcées (document + page), pour limiter les hallucinations</li>
-        <li>Extraction de mots-clés IA à deux niveaux (Gemini, avec repli sur un extracteur local KeyBERT/spaCy)</li>
-        <li>Architecture microservices conteneurisée (Spring Boot + 2 services Python FastAPI) orchestrée via Docker Compose, avec pipeline CI</li>
-      </ul>
-      <p><strong>Spring Boot · Angular · PostgreSQL/pgvector · Docker · JWT</strong></p>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🏦 BanQuery — Assistant Conversationnel Text-to-SQL pour l'Interrogation de Données Bancaires</h4>
-      <p><em>🏢 Stage de Fin d'Année — Banque de Tunisie et des Émirats (BTE)</em></p>
-      <ul align="left">
-        <li>Traduit une question en langage naturel en requête SQL sur un schéma bancaire de 103 tables, destiné aux analystes de données plutôt qu'en libre-service — choix assumé après avoir constaté les limites de fiabilité d'un LLM en accès direct sur des données bancaires</li>
-        <li>Retrieval hybride (BM25 + embeddings, fusion RRF) avec un cutoff dynamique basé sur la distribution des scores plutôt qu'un seuil fixe, et pontage automatique du schéma par graphe de clés étrangères pour garantir des jointures valides</li>
-        <li>Double filet de sécurité avant exécution : validation SQL (SELECT uniquement) puis exécution via un utilisateur PostgreSQL à droits lecture seule — la base protège même si la validation applicative est contournée</li>
-        <li>LLM exécuté localement (Ollama), authentification JWT via cookie httpOnly, audit complet de chaque requête — CI GitHub Actions testant contre de vrais PostgreSQL</li>
-      </ul>
-      <p><strong>Spring Boot · Angular · LangChain4j · Ollama · PostgreSQL/pgvector</strong></p>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" valign="top">
-      <h4>🎮 Mazelex Arena — Jeu de Labyrinthe de Mots</h4>
-      <p><em>Projet Personnel — Algorithmique</em></p>
-      <p>Labyrinthe généré procéduralement avec détection de mots, modes solo/multijoueur et calcul de chemin optimal via BFS/DFS/A*. Scoring basé sur l'efficacité du parcours.</p>
-      <p><strong>Java · JavaFX</strong></p>
-    </td>
-  </tr>
+<tr>
+<td width="50%" valign="top">
+<h4>📋 Plateforme de Gestion RH</h4>
+<p><em>🏢 Stage Professionnel — Office National de Télédiffusion</em></p>
+<p>Modernisation complète de la gestion RH : profils, formations, pointage, paie et demandes administratives, avec automatisation documentaire et notifications email.</p>
+<p><strong>Spring Boot · Angular · JWT · MySQL</strong></p>
+</td>
+<td width="50%" valign="top">
+<h4>🏬 Plateforme B2B de Gestion Commerciale</h4>
+<p><em>🏢 Stage de Fin d'Études — SCSI</em></p>
+<p>Catalogue produits hiérarchique et tarification dynamique pilotée par des règles métier (taxes, dates de validité), avec rôles Admin/Client.</p>
+<p><strong>Angular · ASP.NET Core · SQL Server · Entity Framework Core</strong></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h4>📚 Diffusion de Travaux Scientifiques</h4>
+<p><em>🎓 Projet Académique</em></p>
+<ul align="left">
+<li>API REST sécurisée (JWT, rôles multiples) avec workflow complet de soumission/révision des publications (statut, visibilité, historique d'audit)</li>
+<li>Chatbot RAG interrogeant les publications par recherche vectorielle + reranking (cross-encoder), avec génération via LLM local (Ollama) et réponses systématiquement sourcées (document + page), pour limiter les hallucinations</li>
+<li>Extraction de mots-clés IA à deux niveaux (Gemini, avec repli sur un extracteur local KeyBERT/spaCy)</li>
+<li>Architecture microservices conteneurisée (Spring Boot + 2 services Python FastAPI) orchestrée via Docker Compose, avec pipeline CI</li>
+</ul>
+<p><strong>Spring Boot · Angular · PostgreSQL/pgvector · Docker · JWT</strong></p>
+<p>🔗 <a href="https://github.com/oussema29/Academic_Publishing_Platforms_backend">Backend</a></p>
+</td>
+<td width="50%" valign="top">
+<h4>🏦 BanQuery — Assistant Conversationnel Text-to-SQL pour l'Interrogation de Données Bancaires</h4>
+<p><em>🏢 Stage de Fin d'Année — Banque de Tunisie et des Émirats (BTE)</em></p>
+<ul align="left">
+<li>Traduit une question en langage naturel en requête SQL sur un schéma bancaire de 103 tables, destiné aux analystes de données plutôt qu'en libre-service — choix assumé après avoir constaté les limites de fiabilité d'un LLM en accès direct sur des données bancaires</li>
+<li>Retrieval hybride (BM25 + embeddings, fusion RRF) avec un cutoff dynamique basé sur la distribution des scores plutôt qu'un seuil fixe, et pontage automatique du schéma par graphe de clés étrangères pour garantir des jointures valides</li>
+<li>Double filet de sécurité avant exécution : validation SQL (SELECT uniquement) puis exécution via un utilisateur PostgreSQL à droits lecture seule — la base protège même si la validation applicative est contournée</li>
+<li>LLM exécuté localement (Ollama), authentification JWT via cookie httpOnly, audit complet de chaque requête — CI GitHub Actions testant contre de vrais PostgreSQL</li>
+</ul>
+<p><strong>Spring Boot · Angular · LangChain4j · Ollama · PostgreSQL/pgvector</strong></p>
+<p>🔗 <a href="https://github.com/oussema29/text-to-sql">Backend</a> · <a href="https://github.com/oussema29/text_to_sql_front">Frontend</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center" valign="top">
+<h4>🎮 Mazelex Arena — Jeu de Labyrinthe de Mots</h4>
+<p><em>Projet Personnel — Algorithmique</em></p>
+<p>Labyrinthe généré procéduralement avec détection de mots, modes solo/multijoueur et calcul de chemin optimal via BFS/DFS/A*. Scoring basé sur l'efficacité du parcours.</p>
+<p><strong>Java · JavaFX</strong></p>
+</td>
+</tr>
 </table>
 
 ---
@@ -168,9 +169,8 @@ public class OussemaArfaoui extends Student implements Developer {
 ## 📫 Connect With Me
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/oussema-arfaoui-0549b7230/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:oussemaarfaoui03@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Gmail" /></a>
+<a href="https://www.linkedin.com/in/oussema-arfaoui-0549b7230/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="mailto:oussemaarfaoui03@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Gmail" /></a>
 </p>
 
 ---
-
