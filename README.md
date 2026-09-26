@@ -135,10 +135,15 @@ public class OussemaArfaoui extends Student implements Developer {
       <p><strong>Spring Boot · Angular · PostgreSQL/pgvector · Docker · JWT</strong></p>
     </td>
     <td width="50%" valign="top">
-      <h4>📅 Réservation de Prestations en Ligne</h4>
-      <p><em>🎓 Projet Académique</em></p>
-      <p>Système de prise de rendez-vous avec disponibilités en temps réel, messagerie intégrée et tableau de bord de performance, déployé via Docker.</p>
-      <p><strong>Java · Spring Boot · Angular · MySQL · Docker</strong></p>
+      <h4>🏦 BanQuery — Assistant Conversationnel Text-to-SQL pour l'Interrogation de Données Bancaires</h4>
+      <p><em>🏢 Stage de Fin d'Année — Banque de Tunisie et des Émirats (BTE)</em></p>
+      <ul align="left">
+        <li>Traduit une question en langage naturel en requête SQL sur un schéma bancaire de 103 tables, destiné aux analystes de données plutôt qu'en libre-service — choix assumé après avoir constaté les limites de fiabilité d'un LLM en accès direct sur des données bancaires</li>
+        <li>Retrieval hybride (BM25 + embeddings, fusion RRF) avec un cutoff dynamique basé sur la distribution des scores plutôt qu'un seuil fixe, et pontage automatique du schéma par graphe de clés étrangères pour garantir des jointures valides</li>
+        <li>Double filet de sécurité avant exécution : validation SQL (SELECT uniquement) puis exécution via un utilisateur PostgreSQL à droits lecture seule — la base protège même si la validation applicative est contournée</li>
+        <li>LLM exécuté localement (Ollama), authentification JWT via cookie httpOnly, audit complet de chaque requête — CI GitHub Actions testant contre de vrais PostgreSQL</li>
+      </ul>
+      <p><strong>Spring Boot · Angular · LangChain4j · Ollama · PostgreSQL/pgvector</strong></p>
     </td>
   </tr>
   <tr>
