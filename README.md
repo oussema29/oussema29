@@ -111,7 +111,11 @@ developer.run();
 <td width="50%" valign="top">
 <h4>📋 HR Management Platform</h4>
 <p><em>🏢 Professional Internship — Office National de Télédiffusion</em></p>
-<p>HR web application (Spring Boot, Angular) covering administrative requests, payroll, and training; attendance tracked via a simulated time-clock device (Python collector, API-key-secured endpoint). API secured with Spring Security, JWT, and role-based access.</p>
+<ul align="left">
+<li>HR web application (Spring Boot, Angular) covering administrative requests, payroll, and training</li>
+<li>Attendance module fed by a simulated time-clock device: Python collector pushing to an API-key-secured endpoint</li>
+<li>API secured with Spring Security, JWT, and role-based access</li>
+</ul>
 <p><strong>Spring Boot · Angular · MySQL · Spring Security · JWT · Python · Docker</strong></p>
 </td>
 <td width="50%" valign="top">
