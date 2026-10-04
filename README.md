@@ -109,39 +109,39 @@ developer.run();
 <table width="100%" border="0">
 <tr>
 <td width="50%" valign="top">
-<h4>📋 Plateforme de Gestion RH</h4>
-<p><em>🏢 Stage Professionnel — Office National de Télédiffusion</em></p>
-<p>Modernisation complète de la gestion RH : profils, formations, pointage, paie et demandes administratives, avec automatisation documentaire et notifications email.</p>
+<h4>📋 HR Management Platform</h4>
+<p><em>🏢 Professional Internship — Office National de Télédiffusion</em></p>
+<p>Complete modernization of HR management: employee profiles, training, attendance, payroll, and administrative requests, with automated document generation and email notifications.</p>
 <p><strong>Spring Boot · Angular · JWT · MySQL</strong></p>
 </td>
 <td width="50%" valign="top">
-<h4>🏬 Plateforme B2B de Gestion Commerciale</h4>
-<p><em>🏢 Stage de Fin d'Études — SCSI</em></p>
-<p>Catalogue produits hiérarchique et tarification dynamique pilotée par des règles métier (taxes, dates de validité), avec rôles Admin/Client.</p>
+<h4>🏬 B2B Business Management Platform</h4>
+<p><em>🏢 End-of-Studies Internship — SCSI</em></p>
+<p>Hierarchical product catalog and dynamic pricing engine driven by business rules (taxes, validity dates), with Admin/Client roles.</p>
 <p><strong>Angular · ASP.NET Core · SQL Server · Entity Framework Core</strong></p>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<h4>📚 Diffusion de Travaux Scientifiques</h4>
-<p><em>🎓 Projet Académique</em></p>
+<h4>📚 Scientific Research Publishing Platform</h4>
+<p><em>🎓 Academic Project</em></p>
 <ul align="left">
-<li>API REST sécurisée (JWT, rôles multiples) avec workflow complet de soumission/révision des publications (statut, visibilité, historique d'audit)</li>
-<li>Chatbot RAG interrogeant les publications par recherche vectorielle + reranking (cross-encoder), avec génération via LLM local (Ollama) et réponses systématiquement sourcées (document + page), pour limiter les hallucinations</li>
-<li>Extraction de mots-clés IA à deux niveaux (Gemini, avec repli sur un extracteur local KeyBERT/spaCy)</li>
-<li>Architecture microservices conteneurisée (Spring Boot + 2 services Python FastAPI) orchestrée via Docker Compose, avec pipeline CI</li>
+<li>Secure REST API (JWT, multiple roles) with a complete submission/review workflow for publications (status, visibility, audit history)</li>
+<li>RAG chatbot querying publications via vector search + reranking (cross-encoder), with generation through a local LLM (Ollama) and answers systematically sourced (document + page) to limit hallucinations</li>
+<li>Two-tier AI keyword extraction (Gemini, with fallback to a local KeyBERT/spaCy extractor)</li>
+<li>Containerized microservices architecture (Spring Boot + 2 Python FastAPI services) orchestrated via Docker Compose, with a CI pipeline</li>
 </ul>
 <p><strong>Spring Boot · Angular · PostgreSQL/pgvector · Docker · JWT</strong></p>
 <p>🔗 <a href="https://github.com/oussema29/Academic_Publishing_Platforms_backend">Backend</a></p>
 </td>
 <td width="50%" valign="top">
-<h4>🏦 BanQuery — Assistant Conversationnel Text-to-SQL pour l'Interrogation de Données Bancaires</h4>
-<p><em>🏢 Stage de Fin d'Année — Banque de Tunisie et des Émirats (BTE)</em></p>
+<h4>🏦 BanQuery — Conversational Text-to-SQL Assistant for Banking Data</h4>
+<p><em>🏢 Final-Year Internship — Banque de Tunisie et des Émirats (BTE)</em></p>
 <ul align="left">
-<li>Traduit une question en langage naturel en requête SQL sur un schéma bancaire de 103 tables, destiné aux analystes de données plutôt qu'en libre-service — choix assumé après avoir constaté les limites de fiabilité d'un LLM en accès direct sur des données bancaires</li>
-<li>Retrieval hybride (BM25 + embeddings, fusion RRF) avec un cutoff dynamique basé sur la distribution des scores plutôt qu'un seuil fixe, et pontage automatique du schéma par graphe de clés étrangères pour garantir des jointures valides</li>
-<li>Double filet de sécurité avant exécution : validation SQL (SELECT uniquement) puis exécution via un utilisateur PostgreSQL à droits lecture seule — la base protège même si la validation applicative est contournée</li>
-<li>LLM exécuté localement (Ollama), authentification JWT via cookie httpOnly, audit complet de chaque requête — CI GitHub Actions testant contre de vrais PostgreSQL</li>
+<li>Translates a natural language question into an SQL query over a 103-table banking schema, built for data analysts rather than self-service — a deliberate choice after observing the reliability limits of an LLM with direct access to banking data</li>
+<li>Hybrid retrieval (BM25 + embeddings, RRF fusion) with a dynamic cutoff based on score distribution rather than a fixed threshold, and automatic schema bridging via a foreign-key graph to guarantee valid joins</li>
+<li>Double safety net before execution: SQL validation (SELECT only), then execution via a read-only PostgreSQL user — the database protects data even if application-level validation is bypassed</li>
+<li>LLM run locally (Ollama), JWT authentication via httpOnly cookie, full audit trail for every query — GitHub Actions CI testing against real PostgreSQL</li>
 </ul>
 <p><strong>Spring Boot · Angular · LangChain4j · Ollama · PostgreSQL/pgvector</strong></p>
 <p>🔗 <a href="https://github.com/oussema29/text-to-sql">Backend</a> · <a href="https://github.com/oussema29/text_to_sql_front">Frontend</a></p>
@@ -149,9 +149,9 @@ developer.run();
 </tr>
 <tr>
 <td colspan="2" align="center" valign="top">
-<h4>🎮 Mazelex Arena — Jeu de Labyrinthe de Mots</h4>
-<p><em>Projet Personnel — Algorithmique</em></p>
-<p>Labyrinthe généré procéduralement avec détection de mots, modes solo/multijoueur et calcul de chemin optimal via BFS/DFS/A*. Scoring basé sur l'efficacité du parcours.</p>
+<h4>🎮 Mazelex Arena — Word Maze Game</h4>
+<p><em>Personal Project — Algorithms</em></p>
+<p>Procedurally generated maze with word detection, solo/multiplayer modes, and optimal path calculation via BFS/DFS/A*. Scoring based on path efficiency.</p>
 <p><strong>Java · JavaFX</strong></p>
 </td>
 </tr>
