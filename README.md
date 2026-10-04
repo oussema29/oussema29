@@ -111,8 +111,8 @@ developer.run();
 <td width="50%" valign="top">
 <h4>📋 HR Management Platform</h4>
 <p><em>🏢 Professional Internship — Office National de Télédiffusion</em></p>
-<p>Complete modernization of HR management: employee profiles, training, attendance, payroll, and administrative requests, with automated document generation and email notifications.</p>
-<p><strong>Spring Boot · Angular · JWT · MySQL</strong></p>
+<p>HR web application (Spring Boot, Angular) covering administrative requests, payroll, and training; attendance tracked via a simulated time-clock device (Python collector, API-key-secured endpoint). API secured with Spring Security, JWT, and role-based access.</p>
+<p><strong>Spring Boot · Angular · MySQL · Spring Security · JWT · Python · Docker</strong></p>
 </td>
 <td width="50%" valign="top">
 <h4>🏬 B2B Business Management Platform</h4>
